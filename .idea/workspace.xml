@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f68de967-bc4d-4b51-b964-636bfd746344" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/MyCreatool.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Input.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Register.jsx" afterDir="false" />
+    <list default="true" id="f68de967-bc4d-4b51-b964-636bfd746344" name="Changes" comment="MyCreatool Before Beta v1.0">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +58,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/docker" />
     </key>
@@ -117,11 +113,24 @@
       <option name="presentableId" value="Default" />
       <updated>1759354493940</updated>
       <workItem from="1759354494939" duration="1488000" />
-      <workItem from="1759362191095" duration="38517000" />
+      <workItem from="1759362191095" duration="53415000" />
     </task>
+    <task id="LOCAL-00001" summary="MyCreatool Before Beta v1.0">
+      <option name="closed" value="true" />
+      <created>1759661009120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759661009120</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MyCreatool Before Beta v1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyCreatool Before Beta v1.0" />
   </component>
 </project>

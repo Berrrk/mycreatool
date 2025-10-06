@@ -1,0 +1,23 @@
+services:
+  # Backend Servisi (Django)
+  backend:
+    build: ./backend  # Dockerfile'ın bulunduğu klasör
+    ports:
+      - "8000:8000" # Bilgisayarının 8000. portunu container'ın 8000. portuna bağla
+    volumes:
+      - ./backend:/app # Kodda değişiklik yaptığında container'ın anında görmesi için
+    env_file:
+      - ./backend/.env # Ortam değişkenlerini (veritabanı adresi gibi) bu dosyadan al
+
+  # Frontend Servisi (React)
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    depends_on:
+      - backend

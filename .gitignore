@@ -1,0 +1,5 @@
+# Venv files
+.venv
+
+# Env Files
+.env

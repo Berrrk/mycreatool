@@ -1,10 +1,43 @@
+# MyCreatool Projesi - Python Bağımlılıkları
+# Bu dosya projenin çalışması için gerekli Python paketlerini içerir
+# Kurulum: pip install -r requirements.txt
+
+# ASGI (Asynchronous Server Gateway Interface) desteği
+# Django'nun asenkron işlemler için kullandığı temel kütüphane
 asgiref==3.9.2
+
+# Veritabanı URL'sini Django ayarlarına çeviren kütüphane
+# PostgreSQL, MySQL gibi veritabanları için URL formatını destekler
 dj-database-url==3.0.1
+
+# Django Web Framework - Ana web çatısı
+# REST API, admin panel, ORM gibi özellikleri sağlar
 Django==5.1.13
+
+# Cross-Origin Resource Sharing (CORS) desteği
+# Frontend'den backend'e güvenli istekler için gerekli
 django-cors-headers==4.9.0
+
+# Django REST Framework - API geliştirme çatısı
+# RESTful API endpoint'leri oluşturmak için kullanılır
 djangorestframework==3.16.1
+
+# JWT (JSON Web Token) kimlik doğrulama desteği
+# Güvenli API erişimi için token tabanlı kimlik doğrulama
 djangorestframework_simplejwt==5.5.1
+
+# Python Imaging Library - Görsel işleme
+# Kullanıcı profil resimleri ve görsel dosyalar için
 pillow==11.3.0
+
+# PostgreSQL veritabanı bağlantı sürücüsü
+# Neon PostgreSQL veritabanı ile bağlantı için gerekli
 psycopg2-binary==2.9.10
+
+# JSON Web Token işleme kütüphanesi
+# JWT token'larını oluşturma ve doğrulama için
 PyJWT==2.10.1
+
+# SQL sorgu ayrıştırıcısı
+# Django ORM'in SQL sorgularını optimize etmesi için
 sqlparse==0.5.3

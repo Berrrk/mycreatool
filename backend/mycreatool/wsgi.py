@@ -1,16 +1,25 @@
 """
-WSGI config for mycreatool project.
+MyCreatool Projesi - WSGI Yapılandırması
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+Bu dosya Django projesinin WSGI (Web Server Gateway Interface) yapılandırmasını içerir.
+Production sunucularında (Apache, Nginx) Django uygulamasını çalıştırmak için kullanılır.
 
-For more information on this file, see
-https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
+WSGI Nedir:
+- Python web uygulamaları ile web sunucuları arasındaki arayüz
+- HTTP isteklerini Django'ya yönlendirir
+- Production deployment için gerekli
+
+Kullanım:
+- Apache mod_wsgi ile
+- Nginx + uWSGI/Gunicorn ile
+- Docker container'larında
 """
-
 import os
 
 from django.core.wsgi import get_wsgi_application
 
+# Django settings modülünü ayarla
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mycreatool.settings')
 
+# WSGI application objesini oluştur
 application = get_wsgi_application()

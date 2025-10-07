@@ -1,3 +1,21 @@
+"""
+MyCreatool - Kullanıcı Yönetimi Modelleri
+
+Bu dosya kullanıcı kimlik doğrulama ve yetkilendirme sistemini içerir.
+Resmi kurum standartlarına uygun güvenlik önlemleri alınmıştır.
+
+Modeller:
+1. CustomUserManager: Kullanıcı oluşturma ve yönetimi
+2. CustomUser: Özelleştirilmiş kullanıcı modeli (email tabanlı)
+3. InviteCode: Davet kodu sistemi (beta erişim kontrolü)
+
+Güvenlik Özellikleri:
+- Email tabanlı kimlik doğrulama
+- JWT token desteği
+- Davet kodu sistemi
+- IP ve User-Agent takibi
+- Kredi sistemi entegrasyonu
+"""
 import uuid
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.db import models
@@ -5,7 +23,24 @@ from django.conf import settings
 
 
 class CustomUserManager(BaseUserManager):
+    """
+    Özelleştirilmiş Kullanıcı Yöneticisi
+    
+    Django'nun varsayılan kullanıcı modelini genişletir.
+    Email tabanlı kimlik doğrulama sistemi sağlar.
+    """
     def create_user(self, email, password=None, **extra_fields):
+        """
+        Normal kullanıcı oluşturur
+        
+        Args:
+            email (str): Kullanıcı email adresi (zorunlu)
+            password (str): Kullanıcı şifresi
+            **extra_fields: Ek kullanıcı bilgileri
+            
+        Returns:
+            CustomUser: Oluşturulan kullanıcı objesi
+        """
         if not email:
             raise ValueError('Users must have an email address!')
         email = self.normalize_email(email)
@@ -15,6 +50,17 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email, password=None, **extra_fields):
+        """
+        Süper kullanıcı (admin) oluşturur
+        
+        Args:
+            email (str): Admin email adresi
+            password (str): Admin şifresi
+            **extra_fields: Ek admin bilgileri
+            
+        Returns:
+            CustomUser: Oluşturulan admin kullanıcısı
+        """
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
 
@@ -41,6 +87,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     objects = CustomUserManager()
 
     def __str__(self):
+        """Kullanıcının string temsili"""
         return self.email
 
 

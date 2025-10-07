@@ -1,3 +1,16 @@
+"""
+MyCreatool - Django Admin Paneli Yapılandırması
+
+Bu dosya Django admin panelinde kullanıcı yönetimi arayüzünü içerir.
+Resmi kurum standartlarına uygun admin paneli özellikleri sağlar.
+
+Admin Özellikleri:
+- Kullanıcı yönetimi (CRUD işlemleri)
+- Davet kodu yönetimi
+- Toplu işlemler
+- Arama ve filtreleme
+- Güvenlik logları
+"""
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
@@ -5,8 +18,15 @@ from django.utils import timezone
 from .models import InviteCode
 import uuid
 
+
 @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
+    """
+    Özelleştirilmiş Kullanıcı Admin Paneli
+    
+    Django admin panelinde kullanıcı yönetimi için özelleştirilmiş arayüz.
+    Email tabanlı kimlik doğrulama sistemi için optimize edilmiştir.
+    """
     model = CustomUser
     list_display = ("email", "username", "is_staff", "is_active")
     list_filter = ("is_staff", "is_active")

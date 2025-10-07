@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f68de967-bc4d-4b51-b964-636bfd746344" name="Changes" comment="MyCreatool Before Beta v1.0">
-      <change afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/mycreatool/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mycreatool/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759354493940</updated>
       <workItem from="1759354494939" duration="1488000" />
-      <workItem from="1759362191095" duration="55780000" />
+      <workItem from="1759362191095" duration="56877000" />
     </task>
     <task id="LOCAL-00001" summary="MyCreatool Before Beta v1.0">
       <option name="closed" value="true" />

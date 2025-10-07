@@ -122,8 +122,8 @@ docker-compose up -d
 
 #### 4. Admin Giriş Bilgileri
 ```
-Email: berkzengin@mycreatool.com
-Şifre: !?Brk!?878!?
+Email: nuriakkurt@mycreatool.com
+Şifre: Mycreatool123
 ```
 
 ### 🔧 İlk Kurulum Sonrası
@@ -134,7 +134,7 @@ Email: berkzengin@mycreatool.com
 docker-compose exec backend python manage.py migrate
 ```
 
-#### Superuser Oluşturma
+#### Superuser Oluşturma (Oluşturmaya Gerek Yok, Zaten Var)
 ```bash
 # Yeni admin kullanıcısı oluşturun
 docker-compose exec backend python manage.py createsuperuser
@@ -177,6 +177,7 @@ mycreatool/
 - **Batch İşlemler**: Toplu görsel işleme
 - **Real-time Sonuçlar**: Anlık işlem takibi
 
+### Bu noktadan sonrası ekstra bilgi içindir, fazlasıyla önemi yoktur.
 ### 🔧 Teknik Implementasyon
 
 #### Backend (imagegen/)

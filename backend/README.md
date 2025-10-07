@@ -121,6 +121,7 @@ backend/
 - **Docker**: 20.10+
 - **PostgreSQL**: Neon (Cloud) veya Local
 - **Git**: 2.30+
+- **PyCharm** *(Opsiyonel)*
 
 ### ⚡ Docker ile Kurulum
 
